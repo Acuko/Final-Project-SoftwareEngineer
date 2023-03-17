@@ -1,0 +1,33 @@
+DECLARE "IsHasAccount" With true
+
+if IshasAccount equal true
+    PRINT"Berhasil Login"
+Else
+    PRINT"Berhasil Register"
+
+WRITE "Pilih Menu"
+WRITE "1. Rendang"
+WRITE "2. Ayam"
+
+STORE MENU = " "
+STORE Total = 0
+STORE SALDO = 15000 
+WHILE MENU != "0" DO
+    WRITE "MASUKAN PILIHAN MENU"
+    READ MANU
+
+    IF MENU == "1" THEN
+        STORE HARGA = 15000
+    ELSE IF == "2" THEN
+	    STORE HARGA = 10000
+    ELSE 
+	    STORE HARGA = 0
+    
+    STORE Total = Total + HARGA
+    
+
+IF SALDO more than or equal Total
+    WRITE "PESANAN AKAN DIANTAR"
+ELSE
+    WRITE "MAAF SALDO ANDA KURANG"
+  
